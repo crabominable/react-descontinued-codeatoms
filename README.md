@@ -1,4 +1,4 @@
-## React descontinued Code atoms frontend aplication
+## O frontend descontinuado da aplicação da Code atoms
 
 A parte frontend da aplicação descontinuada da Code atoms, que usa React, Redux, CSS and others
 
