@@ -1,3 +1,5 @@
+### Hi there!
+
 ## The deprecated Code atoms frontend
 
 A parte frontend da aplicação descontinuada da Code atoms, que usa React, Redux, CSS and others.
