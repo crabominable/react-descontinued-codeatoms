@@ -1,35 +1,35 @@
-## O frontend descontinuado da Code atoms
+## The deprecated Code atoms frontend
 
-A parte frontend da aplicação descontinuada da Code atoms, que usa React, Redux, CSS and others
+A parte frontend da aplicação descontinuada da Code atoms, que usa React, Redux, CSS and others.
 
-### Pré requisitos
+The frontend of the deprecated Code atoms application, which uses React, Redux, CSS and others.
+
+### Prerequisites
 
 - Node
 
 ### Começando
 
-Clone o repositório:
+Clone the repository:
 
 ```bash
-git clone https://github.com/luizcalaca/nodejs-prometheus-grafana-monitoring
+git clone https://github.com/crabominable/react-descontinued-codeatoms
 ```
 
-Navegue até a raiz do repositório:
+Go to repository root:
 
 ```bash
-cd nodejs-prometheus-grafana-monitoring
+cd react-descontinued-codeatoms
 ```
 
-Instale as dependências:
+Install the dependencies:
 
 ```bash
 npm install
 ```
 
-Inicie a aplicação:
+Start the aplication:
 
 ```bash
 npm start
 ```
-
-The deprecated frontend of the Code atoms application, which uses React, Redux, CSS and others
