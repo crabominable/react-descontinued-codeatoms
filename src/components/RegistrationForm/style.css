@@ -1,0 +1,28 @@
+.fieldset {
+	display: flex;
+	flex-direction: column;
+	padding: 1em 6em 2.4em 2.8em;
+}
+
+.email {
+	color: rgb(48, 48, 48);
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.password {
+	color: rgb(48, 48, 48);
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.submit-div {
+	align-items: center;
+	display: flex;
+	margin-top: 2.6em;
+	flex-direction: row;
+}
+
+.checkbox-div {
+	margin-left: 1em;
+}

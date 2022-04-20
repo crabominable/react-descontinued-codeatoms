@@ -71,14 +71,14 @@ class Checkout extends Component {
     const { produtos } = this.props;
     const checkout = () => (
       <section>
-        <Header handleCategoryClick={ handleCategoryClick } />
+        <Header handleCategoryClick={handleCategoryClick} />
         <CartButton />
         <div>
           <h1>Revise seus produtos</h1>
           {produtos
             .map((produto) => (<ProdutosSelecionados
-              key={ produto.id }
-              produto={ produto }
+              key={produto.id}
+              produto={produto}
             />))}
         </div>
         <form>
@@ -89,8 +89,8 @@ class Checkout extends Component {
               data-testid="checkout-fullname"
               placeholder="Nome Completo"
               name="nomeCompleto"
-              onChange={ this.gerenciadorDoForm }
-              value={ nomeCompleto }
+              onChange={this.gerenciadorDoForm}
+              value={nomeCompleto}
               required
             />
             <input
@@ -98,8 +98,8 @@ class Checkout extends Component {
               data-testid="checkout-email"
               placeholder="Email"
               name="email"
-              onChange={ this.gerenciadorDoForm }
-              value={ email }
+              onChange={this.gerenciadorDoForm}
+              value={email}
               required
             />
             <input
@@ -107,8 +107,8 @@ class Checkout extends Component {
               data-testid="checkout-cpf"
               placeholder="CPF"
               name="cpf"
-              onChange={ this.gerenciadorDoForm }
-              value={ cpf }
+              onChange={this.gerenciadorDoForm}
+              value={cpf}
               required
             />
             <input
@@ -116,8 +116,8 @@ class Checkout extends Component {
               data-testid="checkout-phone"
               placeholder="Telefone"
               name="telefone"
-              onChange={ this.gerenciadorDoForm }
-              value={ telefone }
+              onChange={this.gerenciadorDoForm}
+              value={telefone}
               required
             />
             <input
@@ -125,8 +125,8 @@ class Checkout extends Component {
               data-testid="checkout-cep"
               placeholder="CEP"
               name="cep"
-              onChange={ this.gerenciadorDoForm }
-              value={ cep }
+              onChange={this.gerenciadorDoForm}
+              value={cep}
               required
             />
             <input
@@ -134,8 +134,8 @@ class Checkout extends Component {
               data-testid="checkout-address"
               placeholder="Endereço"
               name="endereço"
-              onChange={ this.gerenciadorDoForm }
-              value={ endereço }
+              onChange={this.gerenciadorDoForm}
+              value={endereço}
               required
             />
           </fieldset>
@@ -148,7 +148,7 @@ class Checkout extends Component {
                 id="boleto"
                 value="boleto"
                 name="pagamento"
-                onClick={ this.gerenciadorDoForm }
+                onClick={this.gerenciadorDoForm}
                 required
               />
             </label>
@@ -159,7 +159,7 @@ class Checkout extends Component {
                 id="visa"
                 value="visa"
                 name="pagamento"
-                onClick={ this.gerenciadorDoForm }
+                onClick={this.gerenciadorDoForm}
               />
             </label>
             <label htmlFor="mastercard">
@@ -169,7 +169,7 @@ class Checkout extends Component {
                 id="mastercard"
                 value="mastercard"
                 name="pagamento"
-                onClick={ this.gerenciadorDoForm }
+                onClick={this.gerenciadorDoForm}
               />
             </label>
             <label htmlFor="elo">
@@ -179,11 +179,11 @@ class Checkout extends Component {
                 id="elo"
                 value="elo"
                 name="pagamento"
-                onClick={ this.gerenciadorDoForm }
+                onClick={this.gerenciadorDoForm}
               />
             </label>
           </fieldset>
-          <button type="submit" onClick={ this.limparForm }>Comprar</button>
+          <button type="submit" onClick={this.limparForm}>Comprar</button>
         </form>
       </section>
 

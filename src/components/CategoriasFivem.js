@@ -1,7 +1,7 @@
 import React from 'react';
-import planejadoImg from '../imagens/Planejado.png';
-import reactImg from '../imagens/react.png';
-import suporteImg from '../imagens/suporte.png';
+import planejadoImg from '../assets/images/Planejado.png';
+import reactImg from '../assets/images/react.png';
+import suporteImg from '../assets/images/suporte.png';
 
 class CategoriasFivem extends React.Component {
   constructor() {

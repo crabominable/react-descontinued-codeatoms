@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { BotãoCarrinho, Header } from '../components/index';
+import { CartButton, Header } from '../components/index';
 
 class ProdutoDetalhado extends Component {
   constructor() {
@@ -74,7 +74,7 @@ class ProdutoDetalhado extends Component {
                       data-testid="product-detail-add-to-cart"
                       onClick={ () => gestorDoCarrinho(produto) }
                     >
-                      <BotãoCarrinho quantidadeTotal={ quantidadeTotal } />
+                      <CartButton quantidadeTotal={ quantidadeTotal } />
                       Adicionar ao Carrinho
                     </button>
                   </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CategoriasFivem, Produtos, BotãoCarrinho, Header } from '../components/index'
-import data from '../service/data';
+import { CategoriasFivem, Produtos, CartButton, Header } from '../components/index'
+import data from '../services/data';
 
 class ProductsPage extends React.Component {
   constructor() {
@@ -108,7 +108,7 @@ class ProductsPage extends React.Component {
           <CategoriasFivem atualizaFiltro={ this.atualizaFiltro }/>
           <div className="principal-container">
             <div className="principal-botao-carrinho">
-                <BotãoCarrinho
+                <CartButton
                   quantidadeTotal={ quantidadeTotal }
                 />
             </div>

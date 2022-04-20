@@ -1,0 +1,56 @@
+.header-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+	align-items: center;
+	background-color: rgb(25, 25, 25);
+	display: flex;
+	height: 6em;
+	transition: 0.6s;
+	justify-content: space-between;
+  width: 46%;
+}
+
+.sub-menu-1-click {
+	display: block;
+	left: 40%;
+	padding: 0.7em;
+	position: absolute;
+	top: 9%;
+	-webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.sub-menu-2-click {
+	display: block;
+	left: 48%;
+	padding: 0.7em;
+	position: absolute;
+	top: 9%;
+	-webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.item-bar {
+	background-color: rgba(112, 112, 112, 0);
+	border: 0;
+	color: rgb(194, 194, 194);
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: 0.4s;
+}
+
+.item-bar:hover {
+	color: rgb(214, 214, 214);
+	text-shadow: 1px 1px 12px rgba(228, 228, 228, 0.8);
+	transition: 0.4s;
+}

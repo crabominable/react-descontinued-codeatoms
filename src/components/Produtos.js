@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import requestIcon from '../imagens/Planejado.png';
-import reactIcon from '../imagens/react.png';
-import supportIcon from '../imagens/suporte.png';
-import starCard from '../imagens/level-up-icon.png';
-import goldStar from '../imagens/GoldStar.png';
+import requestIcon from '../assets/images/Planejado.png';
+import reactIcon from '../assets/images/react.png';
+import supportIcon from '../assets/images/suporte.png';
+import starCard from '../assets/images/level-up-icon.png';
+import goldStar from '../assets/images/GoldStar.png';
 
 class Produtos extends React.Component {
   renderProduto = (produto) => {

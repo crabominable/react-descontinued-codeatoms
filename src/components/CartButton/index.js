@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-class BotãoCarrinho extends Component {
+import './style.css';
+
+class CartButton extends Component {
   render() {
     const { quantidadeTotal } = this.props;
     return (
@@ -15,15 +17,15 @@ class BotãoCarrinho extends Component {
           Carrinho
         </Link>
         <div className="quantidade-total" data-testid="shopping-cart-size">
-          { quantidadeTotal }
+          {quantidadeTotal}
         </div>
       </div>
     );
   }
 }
 
-BotãoCarrinho.propTypes = {
+CartButton.propTypes = {
   quantidadeTotal: PropTypes.number.isRequired,
 };
 
-export default BotãoCarrinho;
+export default CartButton;
