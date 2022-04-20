@@ -1,37 +1,37 @@
 import React from 'react';
-import { BotãoCarrinho, Header } from '../components/index';
-import barraImg from '../imagens/barra.png';
-import consultsImg from '../imagens/image-consult.png';
-import experienceTeamImg from '../imagens/image-experience-team.png';
-import transparencyImg from '../imagens/image-transparency.png';
-import propertyProjectImg from '../imagens/image-property-project.png';
-import howImageSection from '../imagens/site-design.png';
-import scaleImg from '../imagens/scale-img.png';
-import securityImg from '../imagens/img3.png';
-import easyUseImg from '../imagens/ims2.png';
-import premiereImg from '../imagens/premiere.png';
-import psImg from '../imagens/photoshop.png';
-import afterImg from '../imagens/after.png';
-import aiImg from '../imagens/ai.png';
-import htmlImg from '../imagens/html.png';
-import cssImg from '../imagens/css.png';
-import jsImg from '../imagens/js.png';
-import reactImg from '../imagens/react-another.png';
-import reduxImg from '../imagens/redux.png';
-import jqueryImg from '../imagens/jquery.png';
-import nodeImg from '../imagens/node.png';
-import luaImg from '../imagens/lua.png';
-import likeImg from '../imagens/polegarzin.png';
-import doolImg from '../imagens/bunequin.png';
-import manImg from '../imagens/homezin.png';
-import localImg from '../imagens/localização.png';
-import zapImg from '../imagens/zap.png';
-import instaImg from '../imagens/instagram.png';
-import tiktokImg from '../imagens/tiktok.png';
-import faceImg from '../imagens/facebook.png';
-import zoofleImg from '../imagens/ZOOFLE.png';
-import leftArrowImg from '../imagens/left-arrow.png';
-import rightArrowImg from '../imagens/right-arrow.png';
+import { CartButton, Header } from '../components/index';
+import barraImg from '../assets/images/barra.png';
+import consultsImg from '../assets/images/image-consult.png';
+import experienceTeamImg from '../assets/images/image-experience-team.png';
+import transparencyImg from '../assets/images/image-transparency.png';
+import propertyProjectImg from '../assets/images/image-property-project.png';
+import howImageSection from '../assets/images/site-design.png';
+import scaleImg from '../assets/images/scale-img.png';
+import securityImg from '../assets/images/img3.png';
+import easyUseImg from '../assets/images/ims2.png';
+import premiereImg from '../assets/images/premiere.png';
+import psImg from '../assets/images/photoshop.png';
+import afterImg from '../assets/images/after.png';
+import aiImg from '../assets/images/ai.png';
+import htmlImg from '../assets/images/html.png';
+import cssImg from '../assets/images/css.png';
+import jsImg from '../assets/images/js.png';
+import reactImg from '../assets/images/react-another.png';
+import reduxImg from '../assets/images/redux.png';
+import jqueryImg from '../assets/images/jquery.png';
+import nodeImg from '../assets/images/node.png';
+import luaImg from '../assets/images/lua.png';
+import likeImg from '../assets/images/polegarzin.png';
+import doolImg from '../assets/images/bunequin.png';
+import manImg from '../assets/images/homezin.png';
+import localImg from '../assets/images/localização.png';
+import zapImg from '../assets/images/zap.png';
+import instaImg from '../assets/images/instagram.png';
+import tiktokImg from '../assets/images/tiktok.png';
+import faceImg from '../assets/images/facebook.png';
+import zoofleImg from '../assets/images/ZOOFLE.png';
+import leftArrowImg from '../assets/images/left-arrow.png';
+import rightArrowImg from '../assets/images/right-arrow.png';
 
 class HomePage extends React.Component {
   render() {
@@ -39,7 +39,7 @@ class HomePage extends React.Component {
     return(
       <div>
         <Header handleCategoryClick={ handleCategoryClick }/>
-        <BotãoCarrinho />
+        <CartButton />
         <section className="hero">
           <div className="img-box" id="img-hero">
           </div>

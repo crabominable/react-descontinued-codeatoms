@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Produto, Header } from '../components/index';
-import boxImg from '../imagens/OIP.png';
+import { Produto, Header } from '../../components/index';
+import boxImg from '../../assets/images/OIP.png';
+
+import './style.css';
 
 class Carrinho extends React.Component {
   render() {
     const {
-      handleCategoryClick,
+      handleCategoryClick, 
       produtos,
       removerItemDoCarrinho,
       gerenciarQuantidadeTotal,
@@ -15,10 +17,10 @@ class Carrinho extends React.Component {
 
     const carrinhoVazio = () => (
       <div>
-      <Header handleCategoryClick={ handleCategoryClick } />
+        <Header handleCategoryClick={handleCategoryClick} />
         <div className="cart">
           <h1>Opa, seu carrinho está vazio, adicione algum item para compra que ele aparecera aqui</h1>
-          <img src={ boxImg } className="box-img"></img>
+          <img src={boxImg} className="box-img"></img>
         </div>
       </div>
     );
@@ -30,16 +32,16 @@ class Carrinho extends React.Component {
           <h1>Bem vindo ao carrinho</h1>
           {produtos
             .map((produto) => (<Produto
-              gerenciarQuantidadeTotal={ gerenciarQuantidadeTotal }
-              removerItemDoCarrinho={ removerItemDoCarrinho }
-              key={ produto.id }
-              produto={ produto }
+              gerenciarQuantidadeTotal={gerenciarQuantidadeTotal}
+              removerItemDoCarrinho={removerItemDoCarrinho}
+              key={produto.id}
+              produto={produto}
             />))}
           <Link
             data-testid="checkout-products"
             to="/checkout"
           >
-          <button type="button" id="finish-buy" class="btn btn-success">Finalizar compra</button>
+            <button type="button" id="finish-buy" class="btn btn-success">Finalizar compra</button>
           </Link>
         </div>
       </div>
@@ -47,7 +49,7 @@ class Carrinho extends React.Component {
 
     return (
       <section>
-        { produtos[0] ? mostrarCarrinho() : carrinhoVazio() }
+        {produtos[0] ? mostrarCarrinho() : carrinhoVazio()}
       </section>
     );
   }
